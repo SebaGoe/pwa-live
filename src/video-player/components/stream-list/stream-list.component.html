@@ -1,0 +1,35 @@
+<div class="stream-list-container">
+  <p class="mat-title">Available Streams: </p>
+      <mat-list>
+      <mat-list-item *ngFor="let stream of streams">
+        <button mat-button (click)="setSelectedStream(stream)">
+          <i class="material-icons">play_arrow</i>
+          {{ stream.title }} {{test}}
+        </button>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+</div>
+<div class="row" *ngIf="!compatible || ((displayBeta + displayGamma + displayBeta) === 0)">
+  <div class="col-12">
+    <h4>Orientation is not supported. Sorry</h4>
+  </div>
+</div>
+<ng-container *ngIf="compatible && ((displayBeta + displayGamma + displayBeta) !== 0)">
+  <div class="row">
+      <div class="col-12 col-md-4 offset-md-4 text-center">
+      <h4>Orientation</h4>
+      Beta: {{displayBeta}}
+      <br/>
+      Gamma: {{displayGamma}}
+      <br/>
+      Alpha: {{displayAlpha}}
+    </div>
+  </div>
+  <div class="row my-2 divtransform">
+    <div class="col-12 text-center">
+      <img src="assets/phone.png" class="imgtransform" alt=""
+        [ngStyle]="transformStyles$ | async"/>
+    </div>
+  </div>
+</ng-container>
