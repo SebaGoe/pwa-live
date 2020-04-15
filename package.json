@@ -30,7 +30,7 @@
     "core-js": "^2.5.4",
     "hls.js": "^0.9.1",
     "http-server": "^0.12.1",
-    "rxjs": "^6.3.0",
+    "rxjs": "6.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
