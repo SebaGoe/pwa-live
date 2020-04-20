@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
 import { AppFooterComponent } from './components/app-footer/footer.component';
 import { MotionSensorComponent } from './motion-sensor/motion-sensor.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { MotionSensorComponent } from './motion-sensor/motion-sensor.component';
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
       maxAge: 10
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   bootstrap: [AppComponent]
 })

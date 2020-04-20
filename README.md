@@ -34,6 +34,7 @@ webpack                           4.8.3
 $ npm install
 
 $ ng build --prod
+
 $ npm run pwa
 
 ngrok ダウンロード
