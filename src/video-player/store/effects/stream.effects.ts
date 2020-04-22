@@ -22,7 +22,7 @@ const streams: Stream[] = [ // just pretending that we are loading data from an 
     {
       id: 3,
       poster: "https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg",
-      title: "Test page",
+      title: "Test stream (HTTP)",
       src: "http://live.lachainenormande.fr:80/live/lcn/livestream/playlist.m3u8"
     }
   ];

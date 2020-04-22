@@ -39,6 +39,9 @@ export class StreamListComponent implements OnInit {
     this.streamList$.subscribe(
       (val: VideoPlayerState) => this.streams = val.streamList
     )
+      setTimeout(()=>{
+        this.setSelectedStream(this.streams[1]);
+      }, 3000)
   }
   public checkCompatibility () {
     return !!('DeviceOrientationEvent' in window);
@@ -86,6 +89,9 @@ export class StreamListComponent implements OnInit {
 
   setSelectedStream(stream: Stream) {
     this.store.dispatch(new StreamActions.SetSelectedStream(stream));
+    console.log("Stream", stream);
+
   }
+
 
 }

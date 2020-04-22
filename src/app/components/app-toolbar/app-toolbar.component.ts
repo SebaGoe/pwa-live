@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
       <mat-toolbar>
         <span class="play-icon"></span>
         <span class="spacer"></span>
-        <h1>HLS Player</h1>
+        <h1>PWA Test HLS/360 degree</h1>
       </mat-toolbar>
     </header>
   `,

@@ -33,13 +33,13 @@ webpack                           4.16.4
 
 
 angular-cliはバージョンによってエラーが起きる場合はCLIに@angular-devkit/build-angularを合わせる：
-"
+```
 Angular CLI v8.3.19 -> 0.803.19
 Angular CLI v8.3.17 -> 0.803.17
 Angular CLI v7.3.8 -> 0.13.8
 Angular CLI v6-lts -> 0.8.9
-"
-https://stackoverflow.com/questions/56393158/errors-data-path-buildersapp-shell-should-have-required-property-class
+```
+ソース：　https://stackoverflow.com/questions/56393158/errors-data-path-buildersapp-shell-should-have-required-property-class
 
 # Install/Build
 
@@ -69,7 +69,7 @@ HLS.jsは世界でいろんなサイト実際に使われてる（Twittterなど
 
 詳しくはこちら：　https://web.dev/pwa-checklist/
 Manifest設定でPWAとして使えるようになった。
-Serivce worker なしではオフラインでアクセスできないため、プッシュ通知も使えない。
+Serivce workerなしではオフラインでアクセスできないため、プッシュ通知も使えない。
 
 # Orientation (Native Functions)
 
@@ -80,7 +80,7 @@ OrientationなどをSafariで使うには設定でオンにするしかありま
 https://medium.com/@firt/whats-new-on-ios-12-2-for-progressive-web-apps-75c348f8e945
 Safari ー> 設定 -> モーション、オリエンテーションアクセス　オンにする
 
-カメラやプッシュ通知も設定すればつけるはず。
+カメラやプッシュ通知も設定すれば使えるはず。
 
 # SSL
 
@@ -92,6 +92,7 @@ Win/Macでcertificate設定: https://medium.com/@rubenvermeulen/running-angular-
 # Main App
 
 HLS Player (Sean Brage): https://github.com/bearguns/HLSPlayer
+HLS.jsを使ったビデオプレイヤー
 
 # HLSPlayer
 
